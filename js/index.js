@@ -143,7 +143,6 @@ pBottomContent3rdDiv.textContent = siteContent["main-content"]["vision-content"]
 
 // contact
 const contact = document.querySelectorAll('.contact');
-// console.log(contactSection);
 
 // h4
 const h4Contact = contact[0].children[0];
@@ -160,3 +159,10 @@ contactP2.textContent = siteContent["contact"]["phone"];
 // 3rd p
 const contactP3 = contact[0].children[3];
 contactP3.textContent = siteContent["contact"]["email"];
+
+// footer
+const footer = document.querySelectorAll('footer');
+
+// p
+const footerPTag = footer[0].children[0];
+footerPTag.textContent = siteContent["footer"]["copyright"];
