@@ -43,7 +43,33 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // text content for nav anchors
 const navLinks = document.querySelectorAll('a');
-// console.log(navLinks);
+
 navLinks.forEach((link, index) => {
   link.textContent = siteContent.nav[`nav-item-${index}`]
 })
+
+// cta
+const ctaText = document.getElementsByClassName('cta-text');
+const ctaH1 = ctaText[0].children[0];
+
+const ctaH1Str = siteContent.cta.h1;
+const ctaH1StrArr = ctaH1Str.split(' ');
+
+const dom = ctaH1StrArr[0];
+const is = ctaH1StrArr[1];
+const great = ctaH1StrArr[2];
+const br = document.createElement('br');
+const br2 = document.createElement('br');
+
+ctaH1.append(dom);
+ctaH1.append(br);
+ctaH1.append(is);
+ctaH1.append(br2);
+ctaH1.append(great);
+
+const ctaButton = ctaText[0].children[1];
+ctaButton.textContent = siteContent.cta.button;
+
+// image of a code snippet (cta image)
+const ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', siteContent.cta["img-src"]);
