@@ -45,7 +45,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const navLinks = document.querySelectorAll('a');
 
 navLinks.forEach((link, index) => {
-  link.textContent = siteContent.nav[`nav-item-${index}`]
+  link.textContent = siteContent.nav[`nav-item-${index}`];
+  link.style.color = 'green';
 })
 
 // cta
