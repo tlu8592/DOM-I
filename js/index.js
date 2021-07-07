@@ -107,23 +107,26 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 // bottom content
 const bottomContent = document.querySelectorAll('.bottom-content');
-console.log(bottomContent);
 
 // 1st div
 const bottomContent1stDiv = bottomContent[0].children[0];
 
+// h4
 const h4BottomContent1stDiv = bottomContent1stDiv.children[0];
 h4BottomContent1stDiv.textContent = siteContent["main-content"]["services-h4"];
 
+// p
 const pBottomContent1stDiv = bottomContent1stDiv.children[1];
 pBottomContent1stDiv.textContent = siteContent["main-content"]["services-content"];
 
 // 2nd div
 const bottomContent2ndDiv = bottomContent[0].children[1];
 
+// h4
 const h4BottomContent2ndDiv = bottomContent2ndDiv.children[0];
 h4BottomContent2ndDiv.textContent = siteContent["main-content"]["product-h4"];
 
+// p
 const pBottomContent2ndDiv = bottomContent2ndDiv.children[1];
 pBottomContent2ndDiv.textContent = siteContent["main-content"]["product-content"];
 
