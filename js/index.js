@@ -73,3 +73,67 @@ ctaButton.textContent = siteContent.cta.button;
 // image of a code snippet (cta image)
 const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent.cta["img-src"]);
+
+// main content
+
+// top content
+const topContent = document.getElementsByClassName('top-content');
+
+// 1st div
+const topContent1stDiv = topContent[0].children[0]
+
+// h4
+const h4TopContent1stDiv = topContent1stDiv.children[0];
+h4TopContent1stDiv.textContent = siteContent["main-content"]["features-h4"];
+
+// p 
+const pTopContent1stDiv = topContent1stDiv.children[1];
+pTopContent1stDiv.textContent = siteContent["main-content"]["features-content"];
+
+// 2nd div
+const topContent2ndDiv = topContent[0].children[1];
+
+// h4
+const h4TopContent2ndDiv = topContent2ndDiv.children[0];
+h4TopContent2ndDiv.textContent = siteContent["main-content"]["about-h4"];
+
+// p
+const pTopContent2ndDiv = topContent2ndDiv.children[1];
+pTopContent2ndDiv.textContent = siteContent["main-content"]["about-content"];
+
+// image of code snippets across the screen (middle image)
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// bottom content
+const bottomContent = document.querySelectorAll('.bottom-content');
+console.log(bottomContent);
+
+// 1st div
+const bottomContent1stDiv = bottomContent[0].children[0];
+
+const h4BottomContent1stDiv = bottomContent1stDiv.children[0];
+h4BottomContent1stDiv.textContent = siteContent["main-content"]["services-h4"];
+
+const pBottomContent1stDiv = bottomContent1stDiv.children[1];
+pBottomContent1stDiv.textContent = siteContent["main-content"]["services-content"];
+
+// 2nd div
+const bottomContent2ndDiv = bottomContent[0].children[1];
+
+const h4BottomContent2ndDiv = bottomContent2ndDiv.children[0];
+h4BottomContent2ndDiv.textContent = siteContent["main-content"]["product-h4"];
+
+const pBottomContent2ndDiv = bottomContent2ndDiv.children[1];
+pBottomContent2ndDiv.textContent = siteContent["main-content"]["product-content"];
+
+// 3rd div
+const bottomContent3rdDiv = bottomContent[0].children[2];
+
+// h4
+const h4BottomContent3rdDiv = bottomContent3rdDiv.children[0];
+h4BottomContent3rdDiv.textContent = siteContent["main-content"]["vision-h4"];
+
+// p
+const pBottomContent3rdDiv = bottomContent3rdDiv.children[1];
+pBottomContent3rdDiv.textContent = siteContent["main-content"]["vision-content"];
