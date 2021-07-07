@@ -140,3 +140,23 @@ h4BottomContent3rdDiv.textContent = siteContent["main-content"]["vision-h4"];
 // p
 const pBottomContent3rdDiv = bottomContent3rdDiv.children[1];
 pBottomContent3rdDiv.textContent = siteContent["main-content"]["vision-content"];
+
+// contact
+const contact = document.querySelectorAll('.contact');
+// console.log(contactSection);
+
+// h4
+const h4Contact = contact[0].children[0];
+h4Contact.textContent = siteContent["contact"]["contact-h4"];
+
+// 1st p 
+const contactP1 = contact[0].children[1];
+contactP1.textContent = siteContent["contact"]["address"];
+
+// 2nd p
+const contactP2 = contact[0].children[2];
+contactP2.textContent = siteContent["contact"]["phone"];
+
+// 3rd p
+const contactP3 = contact[0].children[3];
+contactP3.textContent = siteContent["contact"]["email"];
