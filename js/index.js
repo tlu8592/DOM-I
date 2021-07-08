@@ -49,6 +49,21 @@ navLinks.forEach((link, index) => {
   link.style.color = 'green';
 })
 
+// adding new items to navigation
+const navSection = document.querySelector('nav');
+
+const contactLink = document.createElement('a')
+contactLink.textContent = "Contact";
+contactLink.style.color = "green";
+
+const welcomeHeading = document.createElement('h4');
+welcomeHeading.textContent = "Welcome!";
+welcomeHeading.style.color = "orange";
+welcomeHeading.style.fontSize = '20px';
+
+navSection.appendChild(contactLink);
+navSection.prepend(welcomeHeading);
+
 // cta
 const ctaText = document.getElementsByClassName('cta-text');
 const ctaH1 = ctaText[0].children[0];
